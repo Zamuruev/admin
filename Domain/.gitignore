@@ -1,8 +1,10 @@
-target/classes
-target/generated-sources
-target/maven-archiver
-target/maven-status
+# Игнорировать всё в папке target
+target/*
 
+# Исключение: разрешить файлы JAR в папке target
+!target/*.jar
+
+# Стандартные игнорируемые файлы и папки для IDE и инструментов
 ### STS ###
 .apt_generated
 .classpath

@@ -1,11 +1,22 @@
-target/classes
-target/generated-sources
-target/maven-archiver
-target/maven-status
-!.mvn/wrapper/maven-wrapper.jar
+# Игнорировать всё в папке target
+target/*
+
+# Исключение: разрешить файлы JAR в папке target
+!target/*.jar
+
+# Исключение для target в src/main и src/test (если требуется)
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+# Игнорирование и разрешение для build
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# Исключения для Maven Wrapper
+!.mvn/wrapper/maven-wrapper.jar
+
+# Стандартные игнорируемые файлы и папки для IDE и инструментов
 ### STS ###
 .apt_generated
 .classpath
@@ -27,9 +38,6 @@ target/maven-status
 /dist/
 /nbdist/
 /.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
 ### VS Code ###
 .vscode/
