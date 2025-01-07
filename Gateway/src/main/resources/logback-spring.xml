@@ -8,7 +8,7 @@
         <appender-ref ref="LOGSTASH" />
     </root>
 
-    <logger name="org.springframework.web" level="DEBUG">
+    <logger name="admin/gateway" level="DEBUG">
         <appender-ref ref="LOGSTASH" />
     </logger>
 </configuration>
