@@ -6,7 +6,7 @@ public class LoggingInterceptor implements ClientInterceptor {
     @Override
     public <ReqT, RespT> ClientCall<ReqT, RespT> interceptCall(
             MethodDescriptor<ReqT, RespT> method, CallOptions callOptions, Channel next) {
-        System.out.println("Calling gRPC method: " + method.getFullMethodName());
+        System.out.println("Вызван gRPC метод: " + method.getFullMethodName());
         return next.newCall(method, callOptions);
     }
 }
